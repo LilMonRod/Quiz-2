@@ -1,0 +1,149 @@
+/********Wrapper********/
+body {
+  color: #333;
+  & h1, h2, h3{
+      font-family: Georgia, serif;
+  }
+  & p {
+      font-family: Helvetica,  Arial, sans-serif;
+  }
+}
+.wrapper {
+  width: 1100px;
+}
+
+/********Header********/
+.header>h2 {
+  font-size: 45px;
+
+  margin-bottom: 10px;
+  text-align: center;
+}
+.header>p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/******** Columnas ********/
+/**************************/
+.column {
+  float: left;
+}
+
+/****columna izquierda*****/
+.column-left {
+  width: 55%;
+}
+.arrow {
+width: 45px;
+height: 45px;
+margin-top: 300px;
+margin-left: 20px;
+margin-right: 20px;
+}
+.arrov-left {
+float: left;
+}
+.arrov-right {
+float: right;
+}
+.details {
+  float: left;
+  max-width: 435px;
+  max-height: 616px;
+  position: relative;
+}
+.details>img {
+  position: absolute;
+  filter: brightness(70%);
+}
+.details>.next-event {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #73C5A5;
+  top: 20px;
+  margin-left: 14px;
+  position: relative;
+}
+.details>.date-event {
+  font-size: 34px;
+  color: #fff;
+  top: 66px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  position: relative;
+}
+.details>.tittle-event{
+  font-size: 24px;
+  color: #fff;
+  font-weight: lighter;
+  top: 60px;
+  margin-left: 14px;
+  position: relative;
+}
+.details>.place-event {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  top: 60px;
+  margin-left: 14px;
+  position: relative;
+}
+.details>.get-details{
+  width: 415px;
+  display: block;
+  text-decoration: none;
+  background-color: #73C5A5;
+  border: none;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px;
+  top: 356px;
+  text-align: end;
+  position: relative;
+}
+
+
+/****columna derecha*****/
+.event {
+  margin-left: 60px;
+  height: 103px;
+}
+.event + .event {
+  margin-top: 30px;
+}
+.event>.date-event {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.event>.tittle-event {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: Helvetica, arial, sans-serif;
+}
+.event>.place-event {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+.event>.get-details {
+  border: 1px solid #222;
+  border-radius: 100px;
+  background-color: #fff;
+  height: 30px;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 5px 13px;
+  color: #222;
+  text-decoration: none;
+}
+.event-selected {
+  border-left: 15px solid #73C5A5;
+  padding-left: 40px;
+  transition: border-left 2s;
+}
